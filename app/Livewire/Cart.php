@@ -9,7 +9,7 @@ use App\Models\OrderItem;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use Apps\Jobs\SendLowStockNotification;
+use App\Jobs\SendLowStockNotification;
 
 class Cart extends Component
 {
