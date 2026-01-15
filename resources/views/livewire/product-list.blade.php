@@ -17,6 +17,9 @@
                 <p class="text-white-600">${{ number_format($product->price, 2) }}</p>
                 <p class="text-sm text-white-500">Stock: {{ $product->stock_quantity }}</p>
                 <flux:button wire:click="addToCart({{ $product->id }})" class="mt-2" variant="primary">Add To Cart</flux:button>
+                @if ($product->stock_quantity == 0)
+                    <flux:button wire:click="removeItem({{ $product->id }})" class="mt-2" variant="danger">Remove</flux:button>
+                @endif
             </div>
         @endforeach
     </div>

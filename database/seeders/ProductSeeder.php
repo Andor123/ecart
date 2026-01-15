@@ -16,7 +16,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'name' => 'T-Shirt',
             'price' => 14.99,
-            'stock_quantity' => 10
+            'stock_quantity' => 30
         ]);
 
         Product::create([
@@ -28,13 +28,13 @@ class ProductSeeder extends Seeder
         Product::create([
             'name' => 'Blouse',
             'price' => 19.99,
-            'stock_quantity' => 3
+            'stock_quantity' => 30
         ]);
 
         Product::create([
             'name' => 'Coat',
             'price' => 34.99,
-            'stock_quantity' => 20
+            'stock_quantity' => 50
         ]);
     }
 }

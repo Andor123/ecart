@@ -32,6 +32,12 @@ class ProductList extends Component
         }
     }
 
+    public function removeItem($productId)
+    {
+        Product::find($productId)->delete();
+        session()->flash('message', 'Product removed from catalog!');
+    }
+
     public function render()
     {
         $products = Product::all();
